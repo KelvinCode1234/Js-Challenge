@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Challenge</title>
+</head>
+<body>
+    <h3>Hey, so I figured out a simple function to calculate the sum of all even numbers in an array. Here it is:</h3>
+    <div class="code-container">
+        <pre>
+            <code class="javascript">
+            function sumEvenNumbers(arr) {
+            let sum = 0;
+            for (let num of arr) {
+            if (num % 2 === 0) {
+            sum += num;
+            }
+            }
+            return sum;
+            }
+            </code>
+        </pre>
+    </div>
+        <div class="code-container">
+            <pre>
+            <code class="javascript">
+            console.log(sumEvenNumbers([1, 2, 3, 4, 5])); // ( 2 + 4 ) : Output: 6
+            console.log(sumEvenNumbers([10, 20, 30, 40])); // (10 + 20 + 30 + 40 ) : Output: 100
+            </code>
+            </pre>
+        </div>
+        <style>
+            h3{
+                text-align: center;
+                font-family: 'poppins', sans-serif;
+                font-size: 15px;
+            }
+            .code-container {
+            display: block;
+            margin: 20px auto;
+            background-color: #000000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            }
+            .javascript {
+            font-family: monospace;
+            font-size: 14px;
+            color: #fff;
+            }
+            .description {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 20px;
+            }
+        </style>
+</body>
+</html>
